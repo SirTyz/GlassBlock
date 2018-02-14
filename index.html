@@ -1,0 +1,31 @@
+<html>
+    <link rel="stylesheet" href="styles.css">
+    <div class='selection-panel'>
+            <input type="radio" name="glassBlockType" value="premier" id="glassBlockTypePremier">Premier
+            <input type="radio" name="glassBlockType" value="builder" id="glassBlockTypeBuilder">Builder
+            
+            <br>
+            <br>
+
+        Select height: <select onchange="checkHeight()" type="number" id="gridHeight" style="float: right;"></select>
+        <br>
+        <br>
+        Select width:  <select type="number" id="gridWidth" style="float: right;"></select>
+        <hr>
+        <div>
+            Price: <span id='productPrice'></span>
+            <br>
+            Product ID: <span id='productID'></span>
+            <br>
+            Block Pattern: <select id="patternDropdown"> </select>
+            <br>
+            Frame Color: <select onchange="checkColor()" id="colorDropdown"> </select>
+        </div>
+        <input type="button" id="inputButton" class="buy-button"value="Check Price">
+        <input type="button" id="purchaseButton" class="buy-button"value="Purchase Selection">
+    </div>
+    
+
+    <div id="container" class='window-display'></div>
+    <script src="index.js"></script>
+</html>

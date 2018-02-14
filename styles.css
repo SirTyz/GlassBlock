@@ -1,0 +1,13 @@
+.selection-panel {
+    float: left;
+}
+
+.buy-button{
+    margin-top: 2em;
+    width: 50%;
+}
+
+.window-display {
+    float: left;
+    margin-left: 5em;
+}
